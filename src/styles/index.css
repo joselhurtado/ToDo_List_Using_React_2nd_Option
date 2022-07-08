@@ -1,12 +1,63 @@
+body{
+    background-image: linear-gradient(to right, cyan , purple);
+}
 
-/* 
+.container {
+    border-radius: 20px;
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
 
-*/
+h1 {
+    padding-top: 15px;
+    margin-top: 15px;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.form {
+    background-color: #fff;
+    width: 500px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 25px;
+}
+
+.taskInput {
+    width: 100%;
+    margin: 10px;
+    padding: 15px;
+}
+
+.taskGroup {
+    width: 100%;
+    margin: 10px;
+    padding: 15px;
+}
+
+.taskItem {
+    width: 100%;
+    padding: 15px;
+}
+
+.list-group-item {
+    background-color: purple;
+    color: #fff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 0.25rem;
+}
+
+.close {
+    padding: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #FFF;
+    text-shadow: 0 1px 0 #000;
+    filter: alpha(opacity=25);
+    opacity: 1;
+}
+
+.close:hover {
+    color: cyan;
+}
