@@ -1,77 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
 body{
     background-image: linear-gradient(to right, cyan , purple);
 }
 
 .container {
-    border-radius: 20px;
+    border-radius: 10px;
+    width: 100%;
 }
 
 h1 {
-    padding-top: 15px;
     margin-top: 15px;
     font-size: 42px;
     font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .card {
     margin-top: 50px;
     background-color: #fff;
-    width: 600px;
+    width: 640px;
     height: auto;
     padding-bottom: 25px;
 }
 
 .taskInput {
     width: 100%;
-    margin: 10px;
     padding: 15px;
     border-radius: 10px;
     border: 2px solid purple;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .taskGroup {
-    width: 100%;
-    margin: 10px;
+    width: 100% !important;
     padding: 10px;
 }
 
 .taskItem {
     width: 100%;
-    padding: 15px;
+    padding: 10px;
 }
 
 .list-group-item {
     background-color: purple;
     color: #fff;
-    margin: 10px;
-    padding: 15px;
     border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px;
 }
 
 .close {
-    padding: 10px;
-    font-size: 21px;
+    padding: 5px 10PX;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 1;
     color: purple;
     background-color: #fff;
-    filter: alpha(opacity=25);
-    opacity: 1;
     margin: 5px 5px 5px 10px;
     border-radius: 10px;
     border: 2px solid #fff;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .close:hover {
-    padding: 10px;
-    font-size: 21px;
+    padding: 5px 10PX;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 1;
     color: #fff;
     background-color: purple;
-    filter: alpha(opacity=25);
-    opacity: 1;
     margin: 5px 5px 5px 10px;
     border-radius: 10px;
     border: 2px solid #fff;
+    font-family: 'Ubuntu', sans-serif;
 }

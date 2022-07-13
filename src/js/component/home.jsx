@@ -3,6 +3,9 @@ import React, { useState } from "react";
 export default function Home() { //TODOlist Function
 
 	const [theList, setTheList] = useState([
+		"1st Sample Copy",
+		"2nd Sample Copy",
+		"3rd Sample Copy",
 	]);
 
 	const [userInput, setUserInput] = useState([""]); // First empty userInput
@@ -18,7 +21,7 @@ export default function Home() { //TODOlist Function
 	let close = "X"; //Close Icon Variable for Lists
 	const itemDelete = index => {
 		var updatedList = theList.filter( 				// create new variable with updated list > filter to check if index matches original index from list. then use getList to update to new list.
-			(close, taskIndex) => index != taskIndex
+			(x, taskIndex) => index != taskIndex
 		);
 		setTheList(updatedList);
 	};	
@@ -26,18 +29,16 @@ export default function Home() { //TODOlist Function
 	return (
 		<div className="container card text-center">
 			<h1>To-Do List</h1>
-			<br />
-			<div className="container">
+			<div className="container-lg">
 				<input
 					className="taskInput"
 					onChange={event => setUserInput(event.target.value)}
-					value={userInput}
+ 					value={userInput}
 					onKeyUp={handleKeyUp}
 					placeholder="Add a new task here"
 					aria-label="Task on the list"
 				/>
-				<br />
-				<div className="container">
+				<div className="container d-flex">
 					<ul className="taskGroup container">
 						{theList.map((value, index) => {
 							return (
@@ -46,9 +47,7 @@ export default function Home() { //TODOlist Function
 									<button
 										type="button"
 										onClick={() => itemDelete(index)}
-										className="close">
-										{close}
-									</button>
+										className="close">{close}</button>
 								</li>
 							);
 						})}
