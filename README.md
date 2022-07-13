@@ -1,4 +1,7 @@
-# ToDo List Using React 2nd Option
+# ToDo List Using React States
+
+<img src="/src/img/ToDO_List_React_States.png" />
+
 <p>
   <a href="https://gitpod.io#https://github.com/4GeeksAcademy/react-hello.git"><img src="https://raw.githubusercontent.com/4GeeksAcademy/react-hello/master/open-in-gitpod.svg?sanitize=true" />
   </a>
