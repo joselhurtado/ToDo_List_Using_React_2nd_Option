@@ -4,7 +4,6 @@ body{
 
 .container {
     border-radius: 20px;
-
 }
 
 h1 {
@@ -14,11 +13,11 @@ h1 {
     font-weight: bold;
 }
 
-.form {
+.card {
+    margin-top: 50px;
     background-color: #fff;
-    width: 500px;
+    width: 600px;
     height: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding-bottom: 25px;
 }
 
@@ -26,12 +25,14 @@ h1 {
     width: 100%;
     margin: 10px;
     padding: 15px;
+    border-radius: 10px;
+    border: 2px solid purple;
 }
 
 .taskGroup {
     width: 100%;
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
 }
 
 .taskItem {
@@ -44,7 +45,7 @@ h1 {
     color: #fff;
     margin: 10px;
     padding: 15px;
-    border-radius: 0.25rem;
+    border-radius: 10px;
 }
 
 .close {
@@ -52,12 +53,25 @@ h1 {
     font-size: 21px;
     font-weight: 700;
     line-height: 1;
-    color: #FFF;
-    text-shadow: 0 1px 0 #000;
+    color: purple;
+    background-color: #fff;
     filter: alpha(opacity=25);
     opacity: 1;
+    margin: 5px 5px 5px 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
 }
 
 .close:hover {
-    color: cyan;
+    padding: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    background-color: purple;
+    filter: alpha(opacity=25);
+    opacity: 1;
+    margin: 5px 5px 5px 10px;
+    border-radius: 10px;
+    border: 2px solid #fff;
 }
