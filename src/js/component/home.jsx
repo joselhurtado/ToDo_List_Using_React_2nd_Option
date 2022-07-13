@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Logo from "/src/img/todo-image.png";
 
 export default function Home() { //TODOlist Function
 
@@ -27,9 +28,16 @@ export default function Home() { //TODOlist Function
 	};	
 				
 	return (
-		<div className="container card text-center">
-			<h1>To-Do List</h1>
-			<div className="container-lg">
+		<div className="container-fluid card">
+			<div className="containerLogo">
+				<div className="d-flex justify-content-center align-items-center">
+						<div className="d-flex logo align-items-center">
+							<img src={Logo} />
+							<h1 className="d-flex">ToDo List with React</h1>
+						</div>
+				</div>
+			</div>
+			<div className="container-fluid ">
 				<input
 					className="taskInput"
 					onChange={event => setUserInput(event.target.value)}
@@ -38,8 +46,8 @@ export default function Home() { //TODOlist Function
 					placeholder="Add a new task here"
 					aria-label="Task on the list"
 				/>
-				<div className="container d-flex">
-					<ul className="taskGroup container">
+				<div className="d-flex">
+					<ul className="taskGroup container ">
 						{theList.map((value, index) => {
 							return (
 								<li className="list-group-item" key={index}>
@@ -54,6 +62,9 @@ export default function Home() { //TODOlist Function
 					</ul>
 				</div>
 			</div>
+					<div className="footer">
+						Made with ❤️ by <a href="https://www.hurtadojose.com">Jose Hurtado</a>
+					</div>
 		</div>
 	);
 }
